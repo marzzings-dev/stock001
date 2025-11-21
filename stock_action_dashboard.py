@@ -14,7 +14,7 @@ except ImportError:
 # 데이터 불러오기
 @st.cache_data
 def load_data():
-    df = pd.read_csv("quantityavailable.csv")
+    df = pd.read_csv("quantityavailable_2028-08-10.csv")
     df['입고일'] = pd.to_datetime(df['입고일'], errors='coerce')
     return df
 
